@@ -31,6 +31,7 @@ int main() {
 	int t;
 	cin>>t;
 	vector < vector < int > > ele(101, vector < int > (SIZE, 0));
+	ele[0][SIZE - 1] = 1;
 	ele[1][SIZE - 1] = 1;
 	for(int i=2;i<=100;i++) {
 		vector < int > mul(SIZE, 0);
